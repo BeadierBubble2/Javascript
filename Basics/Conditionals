@@ -1,0 +1,41 @@
+Condidtional statements
+  - checks a specific conditition(s) and performs a task based on the condition(s)
+__________
+if...else statement  
+  
+const isTaskCompleted = false;
+
+if (isTaskCompleted) {
+  console.log('Task completed');
+} else {
+  console.log('Task incomplete');
+}
+
+if //keyword
+(isTaskCompleted) //a condition is provideded that evaluates to true or false
+{} //when run code if true ,and if false will not
+else //will run if statement's condition is false
+
+Ternary Operator (shorthand for if...else)
+
+isNightTime ? console.log('Turn on the lights!') :
+console.log('Turn off the lights!');
+
+isNightTime? is the condition
+: before //will be executed if value is true
+: after //will be executed if value is false
+____________
+else...if statement 
+  - check additional conditional
+
+let stopLight = 'yellow';
+
+if (stopLight === 'red') {
+  console.log('Stop!');
+} else if (stopLight === 'yellow') {
+  console.log('Slow down.');
+} else if (stopLight === 'green') {
+  console.log('Go!');
+} else {
+  console.log('Caution, unknown!');
+}
