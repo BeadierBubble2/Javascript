@@ -1,0 +1,27 @@
+Fuction
+  - a block of code designed to particular task
+  - executed whebn "something" invokes/calls it
+  _______________
+  
+  function calculateArea (width,height) {
+    let area(width * height);
+    return area 
+    }
+    
+    function //keyword
+    calculateArea //indentifier/name of function
+    (width, height) //parameters
+    {} //function of body or block of statement to perform a specific task
+    (width * height) //parameters treated as variables
+    return //keyword
+      - stops the execution of function
+      - returns a value from that function
+    area //return area
+    
+    console.log(calculateArea(10,6));
+    
+    calculateArea() //executes the the code
+    (10,6) Parameters' aruguements as value
+    
+    
+    
