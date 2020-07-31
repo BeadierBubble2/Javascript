@@ -1,0 +1,15 @@
+Arrays
+  - list of ordered, stored data
+  - each element has a numbered position known as its index
+  
+  Array has different methods
+_________
+
+Examples: 
+const hobbies = ['element example', 10, true];
+
+_________
+Accessing element
+  - console.log(hobbies[0]);
+Update elements
+  - hobbies[0] = 'text';
