@@ -1,0 +1,8 @@
+fancy word for text
+
+
+Constructing strings w/ variables (2 ways)
+  1. Concatenation
+    "cat name is" + catName
+  2. Template literals
+    "string text ${expression} string text"
