@@ -1,0 +1,15 @@
+Operators
+  + Add
+  - Substract
+  * Multiply
+  / Divide
+  % Reminder
+  Purpose:
+    1. Arithmatic
+      2 + 2
+
+Augment
+  += augment addition
+  -= augment substraction
+  *= augment multiplication
+  /= augment division
