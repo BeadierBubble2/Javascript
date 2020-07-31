@@ -1,0 +1,14 @@
+Variables 
+  - container of a value
+_______
+
+const myName = "Arya"
+
+keywords
+  - var //older version
+  - const //value can't be reassign
+  - let // value can be reassign
+
+myName // variable name
+
+"Arya" //Value Assigned
