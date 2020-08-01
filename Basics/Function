@@ -1,27 +1,61 @@
 Fuction
   - a block of code designed to particular task
   - executed whebn "something" invokes/calls it
+  ________________
+  2 ways to create a function
+    - function declaration
+    - function expression
   _______________
+  Function declaration
   
   function calculateArea (width,height) {
     let area(width * height);
     return area 
     }
     
-    function //keyword
-    calculateArea //indentifier/name of function
-    (width, height) //parameters
-    {} //function of body or block of statement to perform a specific task
-    (width * height) //parameters treated as variables
-    return //keyword
-      - stops the execution of function
-      - returns a value from that function
-    area //return area
+      function //keyword
+      calculateArea //indentifier/name of function
+      (width, height) //parameters
+      {} //function of body or block of statement to perform a specific task
+      (width * height) //parameters treated as variables
+      return //keyword
+        - stops the execution of function
+        - returns a value from that function
+      area //return area
     
     console.log(calculateArea(10,6));
     
     calculateArea() //executes the the code
-    (10,6) Parameters' aruguements as value
-    
+      (10,6) Parameters' aruguements as value   
+ _________________
+ Fuction Expression
+ 
+ const calculateArea=function(width,height0 {
+    const area= width*height;
+    return area;
+ };
+ 
+ calculateArea //indentifier
+ function //keyword& anonymous function
+___________________
+Arrow function
+  -shorthand version of function
+  
+=> //to replace function
+
+zero Parameters
+  const functionName=()=> {};
+one Parameter
+  const functionName = paramOne => {};
+two or more parameters
+  const functionName = (paramOne, paraTwo) => {};
+  
+single-line block
+  const sumNumbers = number => number + number;
+multi-line Block
+   const sumNumbers = number => {
+      const sum = number + number;
+      return sum;
+    };
     
     
