@@ -1,0 +1,20 @@
+for loop
+  contains three expression
+     1. initialization 
+        - starts the loop and can also be used to declare the iterator variable
+     2. stopping condition
+        - the condition that the iterator variable is evaluated against— if the condition 
+          evaluates to true the code block will run, and if it evaluates to false the code will stop
+     3. iteration statement
+        - used to update the iterator variable on each loop
+ ______________
+ Example:
+ 
+ for (let counter = 0; counter < 4; counter++) {
+  console.log(counter);
+}
+
+let counter = 0 // initialization- the loop starts at 0
+counter < 4 // stopping condition - the loop will run as long is less than 4
+counter++ // iteration statement - after each loop, the value of counter will increase by 1. For the first iteration counter will equal 0, 
+                                   for the second iteration counter will equal 1, and so on
