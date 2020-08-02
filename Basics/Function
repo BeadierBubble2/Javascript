@@ -30,7 +30,7 @@ Fuction
  _________________
  Fuction Expression
  
- const calculateArea=function(width,height0 {
+ const calculateArea=function(width,height) {
     const area= width*height;
     return area;
  };
