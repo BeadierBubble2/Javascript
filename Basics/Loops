@@ -1,3 +1,9 @@
+Three types of loops
+    1. for loop
+    2. while loop
+    3. do...while loop
+_______________
+
 for loop
   contains three expression
      1. initialization 
@@ -7,14 +13,75 @@ for loop
           evaluates to true the code block will run, and if it evaluates to false the code will stop
      3. iteration statement
         - used to update the iterator variable on each loop
- ______________
+ 
  Example:
  
- for (let counter = 0; counter < 4; counter++) {
+ for (let counter = 1; counter < 4; counter++) {
   console.log(counter);
 }
 
-let counter = 0 // initialization- the loop starts at 0
+let counter = 1 // initialization- the loop starts at 1
 counter < 4 // stopping condition - the loop will run as long is less than 4
 counter++ // iteration statement - after each loop, the value of counter will increase by 1. For the first iteration counter will equal 0, 
                                    for the second iteration counter will equal 1, and so on
+{} // the block of code to executed until the stopping condition
+                                   
+_________________________________________                                   
+while loop
+
+let counterTwo = 1;
+while (counterTwo < 4) {
+  console.log(counterTwo);
+  counterTwo++;
+}
+
+counterTwo++ //Without the increament if would loop infinitely
+
+when we want a loop to execute an undetermined number of times, while loops are the best choice.
+
+____________________
+do...while loop
+
+let text = "";
+let i = 0;
+do {
+  text += "The number is " + i;
+  i++;
+}
+while (i < 5);
+
+the difference is the block will be executed at least once before the checking the stopping condition
+_________________
+Break
+  -Within the loop, it will exit the loop immmediately
+  
+for (let i = 0; i < 99; i += 1) {
+  if (i > 5) {
+     break;
+  }
+  console.log(i)
+}
+// Output: 0 1 2 3 4 5
+_______________________
+Reverse loop
+
+const items = ['apricot', 'banana', 'cherry'];
+
+for (let i = items.length - 1; i >= 0; i -= 1) {
+  console.log(`${i}. ${items[i]}`);
+}
+
+// Prints: 2. cherry
+// Prints: 1. banana
+// Prints: 0. apricot
+___________________
+Looping through the Arrays
+
+const animals = ['Grizzly Bear', 'Sloth', 'Sea Lion'];
+for (let i = 0; i < animals.length; i++){
+  console.log(animals[i]);
+}
+
+//Prints Grizzly Bear
+//Prints Sloth
+//Prints Sea Lion
