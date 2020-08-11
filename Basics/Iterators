@@ -1,0 +1,41 @@
+Iterators/Array Methods 
+  - called on arrays to manipulate elements and return values
+________________
+
+forEach()
+  - executes a callback function of each of the elements in an array in order
+  
+Ex:
+
+
+
+______________
+
+.map()
+  - executes a callback function on each element in an array. 
+    It returns a new array made up of the return values from the callback function.
+    
+ Ex:
+ 
+__________
+
+.filter()
+  - executes a callback function on each element in an array. 
+    The callback function for each of the elelments must return either true or false. 
+    The returned array is an array with any elements for which the callback function returns true.
+    
+ Ex:
+  
+_______________
+
+.findIndex()
+  - method to find the location of an element in an array
+  
+Ex: 
+
+_______________
+
+.reduce()
+  - iterates through an array and return a single value
+  
+Ex: 
