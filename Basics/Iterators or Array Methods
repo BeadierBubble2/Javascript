@@ -7,8 +7,19 @@ forEach()
   
 Ex:
 
+const groceries = [ 'borwn sugar', 'salt', 'walnuts'];
 
+grocieries.forEach (function(groceryItem) {
+    console.log(groceryItem);
+});
 
+forEach(arguement) - higher order array method accepts functions as parameters 
+                   - takes an argument of callback function
+                   - loops through the array and executes the callback function for each elemetn. 
+                      During each execution, the current element is passed as an argument to the callback function
+function(groceryItem) {
+  console.log(groceryItem); - callback function = a fucntion that is passed into another function as an argument
+ });
 ______________
 
 .map()
@@ -17,6 +28,16 @@ ______________
     
  Ex:
  
+ const numbers = [1, 2, 3];
+ 
+ const bigNumbers = numbers.map(numbers => {
+    return number * 10;
+  });
+  
+  numbers.map - will iterate through each element in the numbers array 
+                and pass the element into the callback function
+
+  return number*10 - the code we wish to execute upon each element in the array
 __________
 
 .filter()
@@ -26,6 +47,12 @@ __________
     
  Ex:
   
+ const words = ['chair', 'music', 'pillow']
+ 
+ const shortWords = words.filter (word => {
+     return word.length < 6
+     
+word.length < 6 - the condition in the callback function
 _______________
 
 .findIndex()
@@ -33,9 +60,33 @@ _______________
   
 Ex: 
 
+const jumbledNums = [123, 25, 78, 5, 9];
+
+const lessThanTen = jumbledNums.findIndex(num => {
+  return num < 10;
+  });
+  
+  console.log(lessThanTen); //Output: 3
+  console.log(jumbledNumbs[3]); //Output: 5
+  
+  num < 10;
+    - the condition that are checked against .findIndex()
+      will return the index of the first element 
+      which evalates in true for that condition
 _______________
 
 .reduce()
   - iterates through an array and return a single value
   
 Ex: 
+
+const numbers = [1, 2, 9, 10];
+
+const summedNums = numbers.reduce ((accumulator, 
+    currentValue => {
+        return accumulator + currentValue
+})
+
+    console.log(summedNums) // Output: 17
+    
+ * also take an optional second paramter to set an initial value for accumulator
