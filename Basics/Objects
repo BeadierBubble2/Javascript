@@ -1,0 +1,37 @@
+Object- data type used for storing key-value pairs
+_____________________
+
+object literal
+
+let spaceship = {
+  color: 'silver',
+ 'Fuel Type: 'diesel'
+ };
+ 
+ color: 'silver - key value pair = A key is like a variable name that points to a location
+                  in memory that holds a value
+ color - key's name/ identifier
+'silver' - value
+___________________
+Access property
+
+two ways 
+  - dot notation .
+  - bracket notation []
+  
+1) dot notation
+
+let spaceship {
+  color: 'silver' 
+};
+
+spaceship.color; // return 'silver'
+
+2) bracket notation
+  - also use variable's names to select object's keys
+  
+spaceship[color]; // return 'silver'
+__________________
+
+Change, add, & delete Properties
+
