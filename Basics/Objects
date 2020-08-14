@@ -35,3 +35,56 @@ __________________
 
 Change, add, & delete Properties
 
+const spaceship = {
+    type: 'shuttle'
+  };
+  
+  spaceship.type = 'alien'; //changes type property's value to 'alien'
+  spaceship.speed = 'Mach 5' //adds a new key/property to the object spaceship
+  delete spaceship.speed; //removes the speed property
+  ________________________
+  
+  Object Methods
+  
+  method- data started on an object as a function
+  
+  A property is what an object has 
+  A method is what an object does
+  
+  
+  
+  object literals
+  key- serves as our method's name
+  value - an anonymous function expression
+  
+  2 ways to write object literals
+    
+    1)
+    const spaceship = {
+      invade: functon () {
+        console.log('Hello')
+        }
+       };
+     
+     2) 
+     const spaceship = {
+      invade () {
+        console.log('Hello")
+        }
+      };
+_______________________
+ 
+ Nested Objects
+  - an object might have another object as a property
+  
+
+const spaceship = {
+  nanoelectronics: {
+    'back-up': {
+      battery: 'Lithium',
+      terabytes: 50
+    }
+  }
+}
+
+spaceship.nanoelectronic['back-up'].battery; //returns 'Lithium'
